@@ -18,6 +18,10 @@ body{
     border-radius: 10px;
     border: 2px solid black;
 }
+nav a:hover{
+    color: black;
+    font-size: 25px;
+  }
 .bottom-box{
     display: flex;
     justify-content: space-between;
