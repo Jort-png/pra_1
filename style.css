@@ -1,16 +1,18 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #56ddef;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 20px auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.top-box{
+
+.top-box {
     background-color: #ffffff;
     padding: 30px;
     padding-left: 100px;
@@ -18,57 +20,79 @@ body{
     border-radius: 10px;
     border: 2px solid black;
 }
-nav a:hover{
+
+nav a:hover {
     color: black;
     font-size: 25px;
-  }
-.bottom-box{
+}
+
+.bottom-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px; 
 }
-.bottom-box img{
+
+.bottom-box img {
     width: 600px;
     height: 500px;
-    
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
-.bottom-box p{
+
+.bottom-box p {
     margin-top: 10px;
     font-size: 14px;
 }
 
-header img{
+header img {
     width: 100px;
     height: 50px;
     margin-bottom: 20px;
 }
 
-nav a{
+nav a {
     margin: 20px;
     text-decoration: none;
     font-family: "Dancing Script", cursive;
 }
-.over{
+
+.over {
     display: flex;
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
-
 }
 
-
 @media screen and (max-width:1025px) {
-    .bottom-box img{
+    .bottom-box img {
         width: 300px;
         height: 250px;
         margin: 10px;
     }
-    
 }
-p{
+
+p {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     border: solid 1px black;
     margin: 8px;
+}
+
+/* Fullscreen stijl voor de afbeelding */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90vw; /* 90% van de breedte van het scherm */
+    height: 90vh; /* 90% van de hoogte van het scherm */
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.9); /* Donkere achtergrond */
+    z-index: 1000;
+
+    /* Flexbox om de afbeelding in het midden te centreren */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
